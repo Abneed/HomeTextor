@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="img\png\Actions-file-close-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GenericParsing\GenericParsing.csproj">
+      <Project>{add325f8-cbd9-43fe-850d-e2f34d736c9d}</Project>
+      <Name>GenericParsing</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
