@@ -673,20 +673,20 @@ namespace HomeTextor
 
         private void iniciarAnalizadorSintacticoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //if (ObtenerDocumentoActual == null)
-            //{
-            //    MessageBox.Show("Por favor, seleccione el archivo ha analizar...");
-            //}
-            //else if (m_tablaTransiciones == null)
-            //{
-            //    MessageBox.Show("Por favor, establezca una tabla de transiciones...");
-            //}
-            //else
-            //{
-            //    m_analizadorLexico = new AnalizadorLexico(m_tablaTransiciones);
-            //    m_analizadorLexico.EstablecerCodigoFuente(ObtenerDocumentoActual.Text);
-            //    AgregarPestana(m_analizadorLexico.ObtenerArchivoTokens());
-            //}
+            if (ObtenerDocumentoActual == null)
+            {
+                MessageBox.Show("Por favor, seleccione el archivo ha analizar...");
+            }
+            else if (m_tablaTransiciones == null)
+            {
+                MessageBox.Show("Por favor, establezca una tabla de transiciones...");
+            }
+            else
+            {
+                m_analizadorLexico = new AnalizadorLexico(m_tablaTransiciones);
+                m_analizadorLexico.EstablecerCodigoFuente(ObtenerDocumentoActual.Text);
+                AgregarPestana(m_analizadorLexico.ObtenerArchivoTokens());
+            }
         }
 
         
