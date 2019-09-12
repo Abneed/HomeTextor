@@ -32,9 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Automata">
-      <HintPath>..\..\Larva-IDE\LarvaEditor\Automata\bin\Debug\Automata.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -95,6 +92,10 @@
     <None Include="img\png\Actions-file-close-icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Automata\Automata.csproj">
+      <Project>{901db825-c6cd-4d82-836b-4a9d525289a1}</Project>
+      <Name>Automata</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GenericParsing\GenericParsing.csproj">
       <Project>{add325f8-cbd9-43fe-850d-e2f34d736c9d}</Project>
       <Name>GenericParsing</Name>
